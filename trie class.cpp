@@ -1,3 +1,4 @@
+  
 #include <iostream>
 #include<unordered_map>
 using namespace std;
@@ -59,20 +60,22 @@ class Trie{
 };
 
 int main(){
+
     Trie t;
-    char words[][10]={"a","hello","not","news","apple"};
+    char words[][10] = {"a","hello","not","news","apple"};
     char w[10];
+    cin>>w;
 
     for(int i=0;i<5;i++){
         t.insert(words[i]);
     }
-    
+
     if(t.find(w)){
         cout<<"Present";
     }
     else{
         cout<<"Absent";
     }
+
     return 0;
 }
-
